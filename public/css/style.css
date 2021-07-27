@@ -31,6 +31,23 @@ img {
     width: 100%;
 }
 
+.btn {
+    display: inline-block;
+    background: #84dccf;
+    color: #fff;
+    min-width: 135px;
+    padding: 20px 32px;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    line-height: 14px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
 .header {
     height: 500px;
     background: linear-gradient(rgba(71, 71, 71, 0.8), rgba(77, 74, 74, 0.8)), url('../img/showcase.jpg') no-repeat center center / cover;
