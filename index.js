@@ -6,8 +6,11 @@ const handlebars = require("express-handlebars");
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
-//routes
+//public
+const path = require("path");
+app.use(express.static(path.join(__dirname, "/public")));
 
+//routes
 app.get("/", (req, res) => {
     res.render("index");
 });
