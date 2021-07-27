@@ -48,6 +48,10 @@ img {
     text-transform: uppercase;
 }
 
+btn-cad:hover {
+    opacity: 0.8;
+}
+
 .header {
     height: 500px;
     background: linear-gradient(rgba(71, 71, 71, 0.8), rgba(77, 74, 74, 0.8)), url('../img/showcase.jpg') no-repeat center center / cover;
