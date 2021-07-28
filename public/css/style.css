@@ -33,7 +33,7 @@ img {
 
 .btn {
     display: inline-block;
-    background: #84dccf;
+    background: #2ea190;
     color: #fff;
     min-width: 135px;
     padding: 20px 32px;
@@ -48,7 +48,7 @@ img {
     text-transform: uppercase;
 }
 
-btn-cad:hover {
+.btn-cad:hover {
     opacity: 0.8;
 }
 
@@ -64,6 +64,7 @@ btn-cad:hover {
     display: flex;
     justify-content: flex-start;
     padding: 20px 40px;
+    color: white;
 }
 
 .header .logo {
@@ -80,4 +81,11 @@ btn-cad:hover {
     justify-content: flex-start;
     align-items: center;
     margin-top: 30px;
+}
+
+.header .header-content h4 {
+    color: #a6d9f7;
+    font-family: 'Satisfy', cursive;
+    font-size: 15px;
+    text-transform: uppercase;
 }
