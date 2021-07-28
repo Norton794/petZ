@@ -58,6 +58,14 @@ h3 {
     text-transform: uppercase;
 }
 
+h3.header-logo {
+    color: #a6d9f7;
+    font-family: 'Satisfy', 'cursive';
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
 .text-xl {
     font-size: 70px;
     font-weight: bold;
@@ -87,9 +95,9 @@ h3 {
 .header .logo {
     color: #a6d9f7;
     font-family: 'Satisfy', cursive;
-    font-size: 3em;
+    font-size: 5em;
     margin: 20px 0;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .header .header-content {

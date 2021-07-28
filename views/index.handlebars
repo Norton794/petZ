@@ -2,14 +2,14 @@
     <nav>
         <ul>
             <li>
-                <h3>PetZ</h3>
+                <h3 class="header-logo">PetZ</h3>
             </li>
         </ul>
     </nav>
 
     <div class="header-content">
         <h4>Bem-Vindes</h4>
-        <h1 class="logo">PetZ</h1>
+        <h1 class="logo"> PetZ</h1>
         {{!-- <img src="img/showcase.jpg" alt="Imagem de um Pug Sorrindo" class="showcase"> --}}
         <button class="btn btn-cad">Cadastre um Pet</button>
     </div>
@@ -24,39 +24,21 @@
     </div>
 
     <div class="cards">
+        {{#each pets}}
         <div class="card">
-            <img src="/img/card-1.jpg" alt="">
+            <img src="/fotos/{{foto}}" alt="">
             <div class="cover-grad"></div>
             <div class="card-text">
-                <div class="sub-tittle">Idade</div>
-                <h3>Nome</h3>
+                <div class="sub-tittle">{{idade}} {{med}}</div>
+                <h3>{{nome}}</h3>
             </div>
         </div>
-
-        <div class="card">
-            <img src="/img/pexels-riika.jpg" alt="">
-            <div class="cover-grad"></div>
-            <div class="card-text">
-                <div class="sub-tittle">Idade</div>
-                <h3>Nome</h3>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="/img/pexels-fox.jpg" alt="">
-            <div class="cover-grad"></div>
-            <div class="card-text">
-                <div class="sub-tittle">Idade</div>
-                <h3>Nome</h3>
-            </div>
-        </div>
-
+        {{/each}}
     </div>
 </section>
 
 
-<section class="cadastro">
+<section class="cadastro" id="secCad">
 
     <form action="cadPet" method="POST" enctype="multipart/form-data">
         <input type="text" name="nome" placeholder="Nome do Animal" required>
@@ -70,7 +52,7 @@
         </div>
 
         <div class="file">
-            <label for="fileUp">Escolha uma Foto</label>
+            <label for="fileUp">Escolha uma Foto do Animal</label>
             <input type="file" name="image" id="fileUp" required>
             <span id="path"></span>
         </div>
