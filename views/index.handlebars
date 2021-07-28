@@ -58,20 +58,20 @@
 
 <section class="cadastro">
 
-    <form action="" enctype="multipart/form-data">
+    <form action="cadPet" method="POST" enctype="multipart/form-data">
         <input type="text" name="nome" placeholder="Nome do Animal" required>
         <div class="sel">
             <input type="number" placeholder="Idade" name="idade" min="0" required>
             <select name="med" id="" required>
                 <option >Anos ou Meses?</option>
-                <option value="">Anos</option>
-                <option value="">Meses</option>
+                <option value="A">Anos</option>
+                <option value="M">Meses</option>
             </select>
         </div>
 
         <div class="file">
             <label for="fileUp">Escolha uma Foto</label>
-            <input type="file" name="" id="fileUp" required>
+            <input type="file" name="image" id="fileUp" required>
             <span id="path"></span>
         </div>
 
