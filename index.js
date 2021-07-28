@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const handlebars = require("express-handlebars");
 
+const multer = require("./multer.js");
+const filehelper = require("./file-helper.js");
 //view engine
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
