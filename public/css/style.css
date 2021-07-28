@@ -48,8 +48,14 @@ img {
     text-transform: uppercase;
 }
 
-.btn-cad:hover {
+.btn:hover {
     opacity: 0.8;
+}
+
+h3 {
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
 }
 
 .text-xl {
@@ -115,15 +121,16 @@ img {
 
 .animais .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-top: 40px;
 }
 
 .animais .cards>div {
-    height: 500px;
+    height: 400px;
     width: 300px;
     position: relative;
+    cursor: pointer;
 }
 
 .animais .cover-grad {
@@ -132,9 +139,91 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(156.82deg, rgba(0, 0, 0, 0.6) 4.58%, rgba(0, 0, 0, 0) 69.61%), linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+    background: linear-gradient(156.82deg, rgba(0, 0, 0, 0.5) 4.58%, rgba(0, 0, 0, 0) 69.61%), linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
 }
 
-.card-1 {
-    background: url('../img/card-1.jpg') no-repeat center center / cover;
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    padding: 2px 16px;
+}
+
+.sub-tittle {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/*form*/
+
+.cadastro {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cadastro form {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.sel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+input[type=text],
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.file {
+    width: 100%;
+    background: #fff;
+    padding-top: 1px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.file label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #2ea190;
+    color: #fff;
+    padding: 5px 5px;
 }
