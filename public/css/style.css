@@ -246,6 +246,43 @@ input[type=file] {
     padding: 5px 5px;
 }
 
+@media (max-width: 600px) {
+    .animais .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+    }
+    .sel {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        width: 100%;
+    }
+    input[type=text],
+    input[type=number],
+    input[type=tel],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        height: 40px;
+        border: 1px solid rgb(131, 131, 131);
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+    .text-xl {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .sub-text {
+        max-width: 85%;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
 
 /*quote*/
 
@@ -280,6 +317,7 @@ input[type=file] {
     margin-top: 50px;
     background: #2e2e2e;
     color: #fff;
+    border: 1px #2e2e2e solid;
 }
 
 .footer-container {

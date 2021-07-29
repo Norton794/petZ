@@ -11,6 +11,7 @@ const {
 require("./models/Pet");
 const Pet = mongoose.model("pet");
 
+
 //view engine
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
@@ -30,6 +31,12 @@ app.engine(
 //public
 const path = require("path");
 app.use(express.static(path.join(__dirname, "/public")));
+
+//favicon
+//<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+const favicon = require('serve-favicon');
+app.use(favicon(path.join(__dirname, '/', 'favico.ico')))
+
 
 //db
 mongoose.connect('mongodb://localhost/petz', {
