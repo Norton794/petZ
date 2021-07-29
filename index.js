@@ -52,13 +52,17 @@ mongoose.connect('mongodb://localhost/petz', {
 //routes
 app.get("/", (req, res) => {
     Pet.find({}).then((pet) => {
-        console.log(pet);
-        pet.forEach((p) => {
-            p.foto = p.foto.slice(0, -3);
-            p.foto += "webp";
-        });
-        console.log(pet);
-        res.render("index", { pets: pet });
+        if (pet.length) {
+            pet.forEach((p) => {
+                p.foto = p.foto.slice(0, -3);
+                p.foto += "webp";
+            });
+            console.log(pet);
+            res.render("index", { pets: pet });
+        } else {
+            res.render("index", { zero: true });
+        }
+
     }).catch((err) => {
         console.log(err);
     });

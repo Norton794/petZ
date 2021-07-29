@@ -23,6 +23,9 @@
         unde iusto!
     </div>
 
+    {{#if zero}}
+    
+    {{else}}
     <div class="cards">
         {{#each pets}}
         <div class="card">
@@ -41,6 +44,9 @@
         </div>
         {{/each}}
     </div>
+    {{/if}}
+
+
 </section>
 
 
@@ -61,7 +67,7 @@
 
         <div class="sel">
             <input type="text" placeholder="Seu Nome" name="nomeP" required>
-            <input type="tel" name="tel" placeholder="Telefone para Contato">
+            <input type="text" name="tel" class="tel" placeholder="Telefone para Contato">
         </div>
 
         <div class="file">
@@ -80,16 +86,16 @@
     <div class="divider"></div>
     <div class="quote-text">
         <p>Todos os seres são iguais, pela sua origem, seus direitos naturais e divinos e seu objetivo final.</p>
-        
+
         <cite title="São Francisco de Assis">São Francisco de Assis</cite>
     </div>
-    
+
     <div class="divider"></div>
 </section>
 
 <footer class="footer">
     <div class="footer-container">
-        
+
 
         <div class="utils">
             <a href="#!">instagram</a>

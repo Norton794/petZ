@@ -31,6 +31,12 @@ img {
     width: 100%;
 }
 
+.zero {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
 .btn {
     display: inline-block;
     background: #2ea190;
