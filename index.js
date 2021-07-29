@@ -65,7 +65,7 @@ app.post("/cadPet", multer.single('image'), (req, res, next) => {
         filehelper.compressImage(req.file, 300)
             .then(newPath => {
                 //res.send("Upload e compressão realizados com sucesso! O novo caminho é:" + newPath);
-                const pet = Pet.create({ nome: req.body.nome, idade: req.body.idade, med: req.body.med, foto: newPath }, (err) => {
+                const pet = Pet.create({ nome: req.body.nome, idade: req.body.idade, med: req.body.med, foto: newPath, nomeP: req.body.nomeP, tel: req.body.tel }, (err) => {
                     if (err) throw err;
                     res.redirect("/");
                 });

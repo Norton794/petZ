@@ -16,6 +16,14 @@ const Pet = new mongoose.Schema({
     foto: {
         type: String,
         required: true
+    },
+    nomeP: {
+        type: String,
+        required: true
+    },
+    tel: {
+        type: String,
+        required: true
     }
 }, {
     timestamps: true,

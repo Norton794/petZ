@@ -11,7 +11,7 @@
         <h4>Bem-Vindes</h4>
         <h1 class="logo"> PetZ</h1>
         {{!-- <img src="img/showcase.jpg" alt="Imagem de um Pug Sorrindo" class="showcase"> --}}
-        <button class="btn btn-cad">Cadastre um Pet</button>
+        <button class="btn btn-cad" id="btn">Cadastre um Pet</button>
     </div>
 </header>
 
@@ -32,6 +32,12 @@
                 <div class="sub-tittle">{{idade}} {{med}}</div>
                 <h3>{{nome}}</h3>
             </div>
+
+            <div class="sub">
+                <h6>Responsável: {{nomeP}}</h6>
+                <h6>Telefone: {{tel}}</h6>
+            </div>
+
         </div>
         {{/each}}
     </div>
@@ -40,15 +46,22 @@
 
 <section class="cadastro" id="secCad">
 
+    <h2>Cadastre um Pet</h2>
+
     <form action="cadPet" method="POST" enctype="multipart/form-data">
         <input type="text" name="nome" placeholder="Nome do Animal" required>
         <div class="sel">
             <input type="number" placeholder="Idade" name="idade" min="0" required>
             <select name="med" id="" required>
-                <option >Anos ou Meses?</option>
+                <option>Anos ou Meses?</option>
                 <option value="A">Anos</option>
                 <option value="M">Meses</option>
             </select>
+        </div>
+
+        <div class="sel">
+            <input type="text" placeholder="Seu Nome" name="nomeP" required>
+            <input type="tel" name="tel" placeholder="Telefone para Contato">
         </div>
 
         <div class="file">
@@ -61,3 +74,31 @@
     </form>
 
 </section>
+
+
+<section class="quote">
+    <div class="divider"></div>
+    <div class="quote-text">
+        <p>Todos os seres são iguais, pela sua origem, seus direitos naturais e divinos e seu objetivo final.</p>
+        
+        <cite title="São Francisco de Assis">São Francisco de Assis</cite>
+    </div>
+    
+    <div class="divider"></div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        
+
+        <div class="utils">
+            <a href="#!">instagram</a>
+            <a href="#!">Facebook</a>
+        </div>
+
+        <div class="small">
+            <small>Desenvolvido por: Norton dos Santos</small>
+        </div>
+    </div>
+
+</footer>
