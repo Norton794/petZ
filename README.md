@@ -65,7 +65,7 @@ $ nodemon index.js
 
 #### Norton dos Santos  
 
-#### nortonsantos79@gmail.com
+[![Gmail Badge](https://img.shields.io/badge/-nortonsantos79@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nortonsantos79@gmail.com)](mailto:nortonsantos79@gmail.com)
 
 
 
